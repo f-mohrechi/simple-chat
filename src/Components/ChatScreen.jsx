@@ -55,8 +55,8 @@ export default class ChatScreen extends Component {
   render() {
     return (
 
-      <div className="container bootstrap snippets">
-        <div className="col-md-7 col-xs-12 col-md-offset-2">
+      <div className="container bootstrap snippets" style={{maxWidth: 600}}>
+        <div style={{display: "flex", justifyContent: "center"}}>
           <div className="panel" id="chat">
             <Heading title={this.state.title} />
             <Body data={this.state.chatsList} avatar={this.state.avatars} />
